@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,44 @@
     <link rel="stylesheet" href="css/index.css">
     <title>Página de teste</title>
 </head>
+
 <body>
-    <h1>Página de teste</h1>
-     <h2>que loucura </h2> 
-     <div class="divtest"></div>
-        <footer>
-            Site desenvolvido por: Felipe Ozias - Vitoria Alencar - Dias Karol - Yan Victor
-        </footer>
+    <main>
+        🔴🟠🟡🟢🔵🟣🟤⚫⚪🔴🟠🟡🟢🔵🟣🟤⚫⚪🔴🟠🟡🟢🔵🟣🟤⚫⚪
+
+        <h1>Página de testes</h1>
+
+        <label>
+            Input de teste
+            <input type="text" name="inputTest" id="inputTest">
+        </label>
+
+        <div id="result1"></div>
+        <div id="result2"></div>
+        <div id="result3"></div>
+    </main>
+
+    <footer>
+        Site desenvolvido por: Felipe Ozias | Apenas para testes
+    </footer>
+    <script>
+        const inputTest = document.getElementById('inputTest');
+        const result1 = document.getElementById('result1');
+        const result2 = document.getElementById('result2');
+        const result3 = document.getElementById('result2');
+
+        inputTest.addEventListener('input', () => {
+            result1.innerHTML = "INPUT ➡️➡️" + inputTest.value;
+        });
+
+        inputTest.addEventListener('change', () => {
+            result2.innerHTML = "CHANGE ➡️" + inputTest.value;
+        });
+
+        // inputTest.addEventListener('blur', () => {
+        //     result3.innerHTML = "BLUR  ➡️➡️ " + inputTest.value;
+        // });
+    </script>
 </body>
+
 </html>
